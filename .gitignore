@@ -1,0 +1,14 @@
+Makefile
+*.aux
+*.bbl
+*.bcf
+*.blc
+*.dvi
+*.log
+*.pdf
+*.ps
+*.xml
+*.swp
+*.blg
+*.jpg
+*.png
