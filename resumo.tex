@@ -1,0 +1,146 @@
+reconhecer ações e objetivos
+mediante observações dos "agentes" e do ambiente
+
+resposta personalizada em diferentes aplicações
+
+conexões com medicina, psicologia, interação humano-computador, sociologia, segurança, etc.
+
+tipos:
+  - baseado em sensores, usuário único: rede de sensores + mineração de dados + aprendizado de máquina, smartphones, consumo diário de energia, atividade ou sedentarismo, covid-19: estimativas de isolamento social,
+  - baseado em sensores, multi-usuário: coleta de informações simultâneas de vários usuários por meio de sensores (normalmente vestíveis), covid- 19 (agora sim)
+  - baseado em sensores, grupo (qual a diferença em relação ao anterior?): uma possível resposta à pergunta: reconhecer o comportamento de um grupo como entidade, ao invés de identificar o comportamento individual dos membros de um grupo, comportamento do grupo x comportamento dos indivíduos; principais desafios: modelar o papel do comportamento individual na dinâmica coletiva; comportamento de multidões (Círio de Nazaré), gerenciamento de multidões (crowd management) e respostta a situações de emergência.
+
+Abordagens:
+  - Através de lógica e reasoning
+    - explicações consistentes das ações observadas
+    - kautz's : complexidade exponencial no pior caso
+    - parece um sistema baseado em regras, tipo árvore de decisão
+    - dificuldade para representar incerteza, incapacidade de aprendizado ao longo do tempo
+  - Através de inferência prbabilística
+    - identificação de atividades diárias, usando sensores (lembrar das discussões sobre monitoramento de idosos, usando vestíveis e câmeras)
+    - sensores: RFID, GPS (HMM, Dynamic Bayesian networks)
+  - Baseado em mineração de dados:
+    - problema de reconhecimento de padrões
+    - definição de classes de atividade
+  - Baseado em GPS
+
+Uso de sensores:
+  - Baseados em visão computacional
+    - multi-câmera
+    - fluxo-optico, filtro de Kalman, hmm, 
+    - câmera única, stereo, ir
+    - rastreamento de pedestre, rastreamento de grupo, deteção de objetos largados
+    - câmeras rgbd
+    - deep learning techniques: classificação de vídeo, detecção de início e fim de atividades, localização espaço-temporal de atividades
+    - integração com commonsense reasoning and commonsense knowledge
+    - Níveis:
+      - detecção de pessoas
+      - rastreamento de pessoas
+      - reconhecimento de atividades humanas
+      - avaliação de atividade de alto-nível.
+    - Markov Networks, CNN e LSTM
+    - Reconhecimento por marcha, análise de marcha,
+
+- caracterizar contexto, e não mais informação específica quadro a quadro
+- o que é e porque é difícil
+  - classificação por múltiplos quadros
+  - ImageNet
+  - Dificuldades:
+    - Custo computacional elevado:
+      - 3 a 4 dias para treinar uma rede na base ucf101 e aproximadamente dois meses para a base sports-1m
+    - Captura de longo contexto:
+      - capturar contexto espaço-temporal ao longo dos quadros
+    - Projeto de arquiteturas para classificação
+      - são muitas as opções
+      - a avaliação de cada uma das opções é custosa
+    - Não há bechmark padronizado
+      - ucf101 e sports1m: old datasets ?
+      - one can use youtube?
+      - kinectics data set?
+      
+- abordagens
+  - Single stream network: 
+  - Two stream network:
+    - uma rede para contexto espacial
+    - uma rede para contexto de movimento
+    - características de movimento são modeladas por vetores de fluxo optico empilhados
+
+    - problemas: false label assignment, ou seja rotular a base é sempre complicado. 
+    - segundo o material consultado: o treinamento de ambas as redes era separado. E  ainda havia uma longa estrada para treinamento "end-to-end on-the-go"
+
+- artigos/Redes:
+  - LRCN: Long-term Recurrent Convolutional Networks for visual recognition and description
+    - the final prediction of each clip (16 frames) is the average of predictions across each time step, and the final prediction at video level is average of predictions from each clip
+    - fluxo óptico não pode ser calculado on the fly?
+    - desvantagem apontada: inabilidade de capturar informação temporal de faixa longa... por quê? a lstm usada não supriria isso, uma vez que a informação é realimentada? A não ser que a realimentação seja resetada a cada clip. 
+    - aumento do número de frames que compõem um clip parece melhorar o desempenho (informação temporal de faixa longa)
+  
+  - C3D: Learning spatiotemporal features with 3D convolutional networks
+    - 3d convolutional nerworks as feature extractors
+    - using deconvolutional layers to interpret model decision
+    - a simple linear classifier like svm on top of ensemble of extracted features worked better than the sota algorithms, performed wven better if hand crafted featureswere used
+    - findings: the net focussed on spatial appearance in first few frames and thacked the motion in the subsequente frames.
+
+  - Conv3D \& Attention
+    - Describing videos by exploiting temporal structure
+    - among the contributions of the paper: use of an **attention mechanism** within a cnn-rnn encoder-decoder framework to capture global context
+    - 3d cnn + lstm: base architecture for video description task.
+    - Algorith:
+      - 3d cnn feature maps for a clip: concatenation with stacked 2d feature maps for the same set of frames
+      - 2d and 3d cnn are pre-trained
+      - weighted average is used to combine the temporal features
+      - attention weights are decided based on lstm output at every time step.
+
+  - TwoStreamFusion
+    - Convolutional two-stream network fusion for video action recognition
+      - multi-level fused architecture ?
+      - fusion of spatial and temporal streams (how and when) for task discrimination: at early stages, rather than at the end of the pipeline.
+      - long-term dependencies are also modeled.
+      * The authors stablished the **supremacy** of the **TwoStreamFusion** method: improved performance withou extra parameters (in comparison with C3D)
+
+  - TSN
+    - Temporal segments networks: towards good practices for deep action recognition
+      - long range temporal modeling effective solution
+      - usage of batch normalisation, dropout, and pre-training
+      - sparse clip sampling across the video: to better model long range temporal signal
+      - final prediction at video-level: 
+        - combine scores from temporal and spatial streams
+        - Fusing score of final spatial and temporal scores using weighted average and applying softmax over all classes
+      - main challenges addressed: overfitting due to small sizes; and long range modeling
+
+  - ActionVlad
+    - ActionVlad: learning spatio-temporal aggregation for action classification
+      - learnable video-level aggregation of features
+      - end-to-end trainable model to capture long term dependency
+      - main contribution: vlad (video-level aggregation ...?) rather than normal aggregation (maxpool or avgpool, for instance)
+      - VLAD: effective way of pooling ! sota in early 2017
+
+  - HiddenTwoStream
+    - Hidden two-stream convolutional networks for action recognition
+      - generation of optical flow input on-the-fly (by using a separate network)
+      - the paper advocates the usage of an unsupervised architecture to generate optical flow for a stack of frames.
+      - optical flow: image reconstruction problem
+      - temporal stream:
+        - it has an optical flow generation net on the top
+        - the input is subsequent frames rather than preprocessed optical flow
+      
+  - I3D
+    - Quo vadis, action recognition? A new model and the Kinetics database
+      - 3d models combined into two stream achitecture 
+      - two different 3d networks for both streams (spatial and temporal)
+      - 2d pre trained weights are repeated in 3d !!!
+      - major contribution: benefit of using pre trained 2D conv nets
+
+  - T3D
+    - Temporal 3d convnets: new architecture and transfer learning for video classification
+      - combine temporal information across variable depth
+      - new technique to supervise transfer learning between 2d pre-trained net to 3d net
+      - multi-depth temporal pooling layer
+Todas as abordagens acima são variações/combinações das redes básicas a seguir:
+  - LSTM: long shot term memory
+  - 3D-ConvNet
+  - Two-stream
+  - 3D-Fused Two-Stream
+  - Two-Stream 3D-ConvNet
+
+

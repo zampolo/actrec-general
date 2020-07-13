@@ -1,0 +1,74 @@
+\input{preambulo}
+
+\title{Visão computacional baseada em aprendizagem profunda para reconhecimento de atividades humanas}
+
+\author[1]{Ronaldo de Freitas Zampolo}
+
+\affil[1]{Laboratório de Processamento de Sinais\\
+Instituto de Tecnologia\\
+Universidade Federal do Pará\\
+66075-110 Belém, PA}
+
+\begin{document}
+\maketitle
+% goals of the proposed research
+% summarize the expected outcomes
+%  impact on the research field
+% specific objectives
+
+% key questions (paragraphs):
+
+% - is the research question important?
+%   - attention grabbing first sentence
+%   - bring reviewers up to speed
+%   - frame the knowledge gap or need
+
+% contexto:
+
+Sistemas computacionais para reconhecimento e predição automáticos de ações apresentam desempenho cada vez mais próximo da capacidade humana de interpretação, graças à popularização do uso de técnicas de aprendizado de máquina, em especial redes neurais profundas. 
+%
+O reconhecimento de atividades ou ações humanas consiste na interpretação de uma cena ou situação, visando identificar o tipo de ação executada por uma ou mais pessoas. 
+%
+A variação de complexidade da tarefa é ampla, dependendo de diversos fatores, tais como: número de pessoas envolvidas na cena (uma, duas ou mais, multidão); ação de interesse (por exemplo, distinguir entre acenar e sentar, e distinguir entre cantar e falar); ambiente em que ocorre a ação (interior de uma residência, e rua movimentada); grau de interação entre pessoas (interação à distância, interação física) e entre pessoas e objetos (ação de escrever pressupõe ser capaz de representar interações com objeto \emph{caneta}, por exemplo). 
+%
+A captura de informações para análise pode se dar através de sensores vestíveis ou câmeras de vídeo, sejam as convencionais ou as que agregam também dados de profundidade (como o Kinect). Em geral, o uso de vestíveis é considerado invasivo, em maior ou menor grau, exigindo a colaboração ativa da pessoa monitorada, o que nem sempre é possível ou conveniente. A análise com o uso de câmeras, por sua vez, é mais difícil de ser feita. 
+%
+Em redes neurais profundas, duas abordagens principais, bem como variações híbridas, se consolidaram para tratar o problema em questão: uso de redes \emph{multi-stream} e uso de redes convolucionais 3D. Ambas procuram combinar análise espacial (intra-quadro) e representar dependências temporais de eventos (inter-quadros) na caracterização das ações monitoradas. 
+%
+Apesar de seus resultados representarem o estado da arte, são conhecidos os problemas da aprendizagem profunda com impacto direto na capacidade de generalização das redes: a necessidade de grande poder computacional e de grande volume de dados rotulados na fase de treinamento (aprendizado supervisionado). Como alternativa, a fim de contornar tais restrições, pode-se empregar o uso de apredizado semi-supervisionado com base de treinamento parcialmente anotada, bem como proceder ao ajuste de parâmetros de redes previamente treinadas (transferência de conhecimento).
+
+
+% - what is the overall goal?
+%   - big picture goal
+%   - objective of this proposal
+%   - best bet hypothesis
+%   - supportive preliminary data
+O objetivo geral desta proposta de pesquisa consiste no desenvolvimento de novas técnicas em reconhecimento e predição de ações humanas, mediante o emprego de estratégias baseadas em aprendizagem profunda, com ênfase na solução de problemas locais e na implementação de provas de conceito que demonstrem a viabilidade dos sistemas concebidos. A pesquisa pretende concentrar seus esforços em três desafios atuais da área: o uso de dados de entrada multi-modais para melhorar o desempenho do reconhecimento visual; a exploraração de mecanismos de interpretação dos sinais de entrada para identificar atributos que permitam reconhecer ações no curto prazo; e o desenvolvimento de abordagens para uso de redes pré-treinadas e o treinamento com conjunto de dados parcialmente rotulado.
+
+% - what specifically will be done?
+%   - aims
+%   - working hypothesis
+%   - methods
+Dentre as possibilidades de aplicação, escolhemos três fortemente alinhadas com demandas locais: monitoramento de áreas industriais para fins de segurança (contagem de pessoas, deteção de indivíduos sem \emph{equipamento de proteção individual} adequado, deteção de indivíduos não autorizados, reconhecimento de ações/interações não autorizadas ou perigosas, deteção de comportamentos anômalos);  acompanhamento domiciliar remoto de idosos (monitoramento de atividades diárias, predição de queda, e prevenção de acidentes); e estimativa de contagem pessoas e reconhecimento de comportamento anômalo em multidões (subsidiando o planejamento e a tomada de decisão para organizadores de grandes eventos, como o Círio de Nazaré).
+
+
+% - what is the specific pay off?
+%   - return on investment
+%   - related to goals of the funding anouncement
+Os ganhos esperados do projeto são categorizados em: formação de recursos humanos, decorrente do preparo de pessoal especializado em projeto e implementação de sistemas baseados em aprendizado de máquina; aumento de segurança, em razão da redução de acidentes em espaços industriais, grandes eventos, e residências; melhoramento da qualidade de vida, resultado, por exemplo, da detecção precoce de degração da atividade motora em idosos monitorados; proteção ambiental, mediante a prevenção de acidentes industriais de efeito contaminante; e econômicos, advindos da redução de custos associados aos problemas relacionados, bem como pela eventual concessão de patentes e registro de \emph{softwares}, produtos das provas de conceito realizadas ao longo da pesquisa.
+  
+  
+ %- é possivel estimar um montante ? e comparar com investimento no projeto?
+
+
+
+
+%- anteriormente, eram utizados classificadores que atuavam em atributos hand-crafted; atualmente, camadas extratoras de atributos em redes neurais convolucionais fazem o trabalho pesado, ao preço de maior complexidade computacional
+  %- Dois são os aspectos principais a serem caracterizados: análise espacial (intra-frames) e análise temporal (inter-frame). Um desafio ainda é a representação de dependências temporais de longo prazo, o que vem sendo parcialmente resolvido com o uso de redes recursivas como a LSTM (long-short term memory).
+
+%  - outras questões: privacidade (anonimização), sistemas de comunicação (redes de acesso e transmissão da informação capturada para sistema remoto de análise e armazenamento) , sistemas de gerenciamento da informação (análise e acesso ao dado processado, banco de dados), aparato de obtenção dos dados de entrada (sensores, câmeras, kinect); dispositivos mais modestos como smartphones e plataformas como raspbery
+
+
+
+
+\end{document}
