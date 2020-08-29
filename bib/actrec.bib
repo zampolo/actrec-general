@@ -1,3 +1,4 @@
+% Encoding: UTF-8
 @article{jegham-2020,
 	title = {Vision-based human action recognition: An overview and real world challenges},
 	volume = {32},
@@ -87,3 +88,67 @@
 	keywords = {done, selected, review},
 	file = {Herath et al. - 2017 - Going deeper into action recognition A survey.pdf:/home/zampolo/Zotero/storage/HQ9WA5GR/Herath et al. - 2017 - Going deeper into action recognition A survey.pdf:application/pdf}
 }
+
+@Article{xia-2020,
+  author       = {Xia, Kun and Huang, Jianguang and Wang, Hanyu},
+  title        = {{LSTM}-{CNN} Architecture for Human Activity Recognition},
+  volume       = {8},
+  pages        = {56855--56866},
+  issn         = {2169-3536},
+  abstract     = {In the past years, traditional pattern recognition methods have made great progress. However, these methods rely heavily on manual feature extraction, which may hinder the generalization model performance. With the increasing popularity and success of deep learning methods, using these techniques to recognize human actions in mobile and wearable computing scenarios has attracted widespread attention. In this paper, a deep neural network that combines convolutional layers with long short-term memory ({LSTM}) was proposed. This model could extract activity features automatically and classify them with a few model parameters. {LSTM} is a variant of the recurrent neural network ({RNN}), which is more suitable for processing temporal sequences. In the proposed architecture, the raw data collected by mobile sensors was fed into a two-layer {LSTM} followed by convolutional layers. In addition, a global average pooling layer ({GAP}) was applied to replace the fully connected layer after convolution for reducing model parameters. Moreover, a batch normalization layer ({BN}) was added after the {GAP} layer to speed up the convergence, and obvious results were achieved. The model performance was evaluated on three public datasets ({UCI}, {WISDM}, and {OPPORTUNITY}). Finally, the overall accuracy of the model in the {UCI}-{HAR} dataset is 95.78\%, in the {WISDM} dataset is 95.85\%, and in the {OPPORTUNITY} dataset is 92.63\%. The results show that the proposed model has higher robustness and better activity detection capability than some of the reported results. It can not only adaptively extract activity features, but also has fewer parameters and higher accuracy.},
+  date         = {2020},
+  doi          = {10.1109/ACCESS.2020.2982225},
+  file         = {09043535.pdf:/home/zampolo/engenharia/artigos/activity-recognition/09043535.pdf:application/pdf},
+  journaltitle = {{IEEE} Access},
+  keywords     = {to read},
+  langid       = {english},
+  shortjournal = {{IEEE} Access},
+  url          = {https://ieeexplore.ieee.org/document/9043535/},
+  urldate      = {2020-06-24},
+}
+
+@Article{hochreiter-1997,
+  author   = {Hochreiter, Sepp and Schmidhuber, Jurgen},
+  title    = {Long short-term memory.},
+  journal  = {Neural Computation},
+  year     = {1997},
+  volume   = {9},
+  number   = {8},
+  pages    = {1735},
+  issn     = {08997667},
+  abstract = {Addresses the problem of storing information over extended time intervals by recurrent backpropagation. Introduction of a novel, efficient, gradient-based method called long short-term memory; Results of experiments with artificial data.},
+  keywords = {Information retrieval, Back propagation, Short-term memory},
+  url      = {http://search-ebscohost-com.ez3.periodicos.capes.gov.br/login.aspx?direct=true&db=iih&AN=9710215021&lang=pt-br&site=ehost-live&authtype=ip,cookie,uid},
+}
+
+@Article{donahue-2016,
+  author       = {Donahue, Jeff and Hendricks, Lisa Anne and Rohrbach, Marcus and Venugopalan, Subhashini and Guadarrama, Sergio and Saenko, Kate and Darrell, Trevor},
+  title        = {Long-term Recurrent Convolutional Networks for Visual Recognition and Description},
+  abstract     = {Models based on deep convolutional networks have dominated recent image interpretation tasks; we investigate whether models which are also recurrent are effective for tasks involving sequences, visual and otherwise. We describe a class of recurrent convolutional architectures which is end-to-end trainable and suitable for large-scale visual understanding tasks, and demonstrate the value of these models for activity recognition, image captioning, and video description. In contrast to previous models which assume a ﬁxed visual representation or perform simple temporal averaging for sequential processing, recurrent convolutional models are “doubly deep” in that they learn compositional representations in space and time. Learning long-term dependencies is possible when nonlinearities are incorporated into the network state updates. Differentiable recurrent models are appealing in that they can directly map variable-length inputs (e.g., videos) to variable-length outputs (e.g., natural language text) and can model complex temporal dynamics; yet they can be optimized with backpropagation. Our recurrent sequence models are directly connected to modern visual convolutional network models and can be jointly trained to learn temporal dynamics and convolutional perceptual representations. Our results show that such models have distinct advantages over state-of-the-art models for recognition or generation which are separately deﬁned or optimized.},
+  date         = {2016-05-31},
+  eprint       = {1411.4389},
+  eprinttype   = {arxiv},
+  file         = {1411.4389.pdf:/home/zampolo/engenharia/artigos/activity-recognition/1411.4389.pdf:application/pdf},
+  journaltitle = {{arXiv}:1411.4389 [cs]},
+  keywords     = {to read},
+  langid       = {english},
+  url          = {http://arxiv.org/abs/1411.4389},
+  urldate      = {2020-06-24},
+}
+
+@Article{wang-2015,
+  author       = {Wang, Limin and Xiong, Yuanjun and Wang, Zhe and Qiao, Yu},
+  title        = {Towards Good Practices for Very Deep Two-Stream {ConvNets}},
+  abstract     = {Deep convolutional networks have achieved great success for object recognition in still images. However, for action recognition in videos, the improvement of deep convolutional networks is not so evident. We argue that there are two reasons that could probably explain this result. First the current network architectures (e.g. Two-stream {ConvNets} [12]) are relatively shallow compared with those very deep models in image domain (e.g. {VGGNet} [13], {GoogLeNet} [15]), and therefore their modeling capacity is constrained by their depth. Second, probably more importantly, the training dataset of action recognition is extremely small compared with the {ImageNet} dataset, and thus it will be easy to over-ﬁt on the training dataset.},
+  date         = {2015-07-08},
+  eprint       = {1507.02159},
+  eprinttype   = {arxiv},
+  file         = {Wang et al. - 2015 - Towards Good Practices for Very Deep Two-Stream Co.pdf:/home/zampolo/Zotero/storage/GMQP356M/Wang et al. - 2015 - Towards Good Practices for Very Deep Two-Stream Co.pdf:application/pdf},
+  journaltitle = {{arXiv}:1507.02159 [cs]},
+  keywords     = {Computer Science - Computer Vision and Pattern Recognition},
+  langid       = {english},
+  url          = {http://arxiv.org/abs/1507.02159},
+  urldate      = {2020-08-29},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
