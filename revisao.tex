@@ -1,26 +1,28 @@
 \nocite{jegham-2020, hussain-2020,yao-2019,kongr-2018,herath-2017}
-%#Elements:
-%1- Short and precise **overview**; 
-%  - Concentuação/Taxonomia: o que é o reconhecimento de ações (ações ou atividades?, interação, )
-%  - Tipos de sistemas. Diferentes classificações: número de pessoas envolvidas, ambiente, interação com pessoas e/ou objetos, predição/reconhecimento, uso de hadcrafted features ou extração automática de features/atributos usando cnns, ou ainda abordagens híbridas
-Este projeto trata do reconhecimento automático de atividades humanas mediante o uso de visão computacional baseada em redes profundas. Em razão da falta de consenso sobre os termos usados na área, é interessante que algumas definições sejam postas a fim de caracterizar o escopo deste projeto bem como o objeto de pesquisa. 
-
-% O que é e algumas definições
-A primeira distinção a ser feita é entre dois termos encontrados muito frequentemente: \emph{ação} e \emph{atividade}. Sem maiores aprofundamentos, e a despeito de algumas controvérsias, o presente texto adota a direção apontada por~\textcite{herath-2017} que considera que uma \emph{ação} é um evento primitivo, simples, fácil de caracterizar, e que é realizado por uma única pessoa (por exemplo, \emph{indivíduo levanta o braço}). Por outro lado, a sucessão de ações diferentes forma \emph{atividades}, essas mais ou menos complexas (por exemplo, \emph{preparar café}).
+% Elements:
+% 1- Short and precise **overview**; 
+%Este projeto trata do reconhecimento automático de atividades humanas mediante o uso de visão computacional baseada em redes profundas. 
+Em razão de uma certa falta de consenso sobre os termos usados na área de reconhecimento de atividades humanas (\emph{human activity recognition}, HAR), é interessante que algumas definições seja postas, a fim de bem caracterizar o escopo deste projeto e o objeto de pesquisa. 
 %
-A tarefa de reconhecimento de atividades é também referenciada na literatura técnica especializada como classificação de atividades e consiste em, dado um vídeo de entrada, atribuir-lhe um dentre os elementos de um conjunto de atividades previamente definidas. Outras tarefas relacionadas são: a detecção de atividades, onde o objetivo é precisar os quadros de início e término de uma atividade no vídeo de entrada (localização temporal); e a predição de atividades, cuja finalidade é estimar quais atividades ocorrerão em quadros futuros, baseando-se nas atividades presentes no vídeo de entrada~\parencite{yao-2019}.%pensar em AUC para diferentes valores de limiar temporal.
-
-% A estratégia a ser utilizada e suas variações
-O enfoque pretendido neste projeto compreende o uso de redes neurais artificiais profundas, que vêm consolidado sua presença em um grande número de aplicações em visão computacional, em razão de sua capacidade de selecionar automaticamente os atributos mais adequados dos sinais de entrada, dadas as características do conjunto de treinamento~\parencite{yao-2019}.
-
-Além dos algoritmos de classificação em si, outros elementos compõem o sistema de reconhecimento de atividades e influenciam a qualidade do resultado a ser alcançado. Dentre eles, um que merece menção diz respeito à modalidade de aquisição do vídeo a ser analisado. As principais modalidades em relação às características espectrais do sinal de entrada são: vídeo convencional, colorido ou não, em que o registro compreende a faixa de frequências do espectro visível; vídeo com informação de profundidade, cada vez mais populares em razão da redução de curso de sensores como o Kinect; e vídeo obtido por sensores infravermelhos. Outra modalidade de grande importância, refere-se à quantidade de câmeras usadas para aquisição da cena, podendo os sistemas ser classificados como: de câmera única, em geral posicionada estaticamente em relação à cena; ou multi-câmera, em que há mais de uma câmera registrando a cena que será analisada (pontos de vista diferentes do mesmo evento)~\parencite{yao-2019}.
+% definições 1
+Começaremos por dois termos encontrados amiúde e motivo de confusão: \emph{ação} e \emph{atividade}. Sem maiores aprofundamentos, e a despeito de algumas controvérsias, o presente texto adota a direção apontada por~\textcite{herath-2017} que considera que uma \emph{ação} é um evento primitivo, simples, fácil de caracterizar, e que é realizado por uma única pessoa (por exemplo, \emph{indivíduo levanta o braço}). Por outro lado, uma sucessão de ações diferentes forma \emph{atividades}, essas mais ou menos complexas (por exemplo, \emph{preparar café}).
 %
-% aspecto relacionado à cena
-Outro aspecto a ser considerado, diz respeito à quantidade de elementos participantes de uma cena. Pode-se ter situações em que apenas uma pessoa está presente; em outras, pode-se ter dois ou mais indivíduos interagindo; e ainda, o(s) indivíduo(s) pode(m) interagir com objetos. As possibilidades de variação aqui são inúmeras, influenciando no grau de complexidade da cena.
-% aspecto relacionado à cena
-Cenas não são apenas compostas pelos atores principais que desempenham interações e/ou atividades de interesse, mas também pelo pelo contexto, simplificadamente denominado de \emph{fundo}, que pode variar entre \emph{estático} em ambientes controlados (em um estúdio ou laboratório, por exemplo) ou altamente dinâmicos, como em ruas de grandes cidades ou áreas com a presença de diversas pessoas realizando diferentes atividades. A dificuldade do reconhecimento aumenta com a dinamicidade do fundo, pois além da tarefa de estimar a atividade sendo desempenhada, o sistema precisa diferenciar entre movimentação dos objetos de interesse e das modificações típicas do fundo.
+% definições 2
+Na literatura técnica especializada, o reconhecimento de atividades é também referenciado como classificação de atividades e consiste em associar um vídeo a um dos elementos de um conjunto de atividades previamente definidas. Outras tarefas relacionadas são: a detecção de atividades, onde o objetivo é precisar os tempos de início e término de uma atividade no vídeo de entrada (localização temporal); e a predição de atividades, cuja finalidade é estimar quais atividades ocorrerão em quadros futuros ao  vídeo de entrada~\parencite{yao-2019}.%pensar em AUC para diferentes valores de limiar temporal.
+%
+% sistema: modalidades
+Além dos algoritmos de classificação em si, outros elementos compõem e influenciam diretamente o desempenho do sistema de reconhecimento de atividades. Dentre eles, merece menção a modalidade de aquisição do vídeo. De acordo com o tipo de sensor usado nas câmeras, o vídeo pode ser classificado como: vídeo convencional (o registro compreende a faixa de frequências do espectro visível); vídeo com informação de profundidade (sendo o exemplo mais comum de sistema desse tipo o Microsoft Kinect); e vídeo obtido por sensores infravermelhos. Outra modalidade de grande importância, refere-se à quantidade de câmeras usadas, podendo os sistemas ser classificados como: de câmera única; ou multi-câmera~\parencite{yao-2019}.
+%
+% cena: quantidade de elementos e suas interações
+As cenas a serem analizadas também interferem na qualidade dos resultados. Por exemplo, há variação de complexidade da tarefa de reconhecimento, dependendo da quantidade de participantes da atividade de interesse e seu grau de interação. Pode-se ter situações em que apenas uma pessoa está presente; em outras, pode-se ter dois ou mais indivíduos interagindo; e ainda, o(s) indivíduo(s) pode(m) interagir com objetos.
+% cena: background
+O fundo (\emph{background}) diante do qual a atividade de interesse se desenrola também tem papel de significativa importância na ... , podendo variar entre \emph{estático}, típico de ambientes controlados (em um estúdio ou laboratório, por exemplo), ou altamente dinâmicos, como em ruas de grandes cidades ou áreas com a presença de diversas pessoas realizando diferentes atividades simultanemente. A dificuldade do reconhecimento aumenta com a dinamicidade do fundo, pois além da tarefa de estimar a atividade sendo desempenhada, o sistema precisa diferenciar entre movimentação dos objetos de interesse e das modificações típicas do fundo.
 % aplicações
 O reconhecimento automático de atividades é uma das áreas de maior interesse em visão computacional com um leque de possíveis aplicações abrangendo áreas como ambientes inteligentes, classificação e busca automática em repositórios de imagem e vídeo, e avaliação do comportamento de multidões, dentre outras.
+%
+% A estratégia a ser utilizada e suas variações
+%O enfoque pretendido neste projeto compreende o uso de redes neurais artificiais profundas, que vêm consolidado sua presença em um grande número de aplicações em visão computacional, em razão de sua capacidade de selecionar automaticamente os atributos mais adequados dos sinais de entrada, dadas as características do conjunto de treinamento~\parencite{yao-2019}.
+%
 %
 %2- **Present state** of the research; 
 % Abordagens:
