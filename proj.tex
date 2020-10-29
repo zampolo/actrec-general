@@ -21,27 +21,28 @@ A integração de recursos de inteligência computacional na atividade industria
 % statistical methods
 
 % formação de equipe
+% estado da arte.
+O núcleo da equipe executora será formado por pesquisadores e estudantes de nível superior (graduação e pós-graduação) atuantes nas áreas de aprendizado de máquina, visão computacional, e programação.
+
+A fim de entregar um produto tecnológico de real valor agregado, o estado da arte em videomonitoramento inteligente deverá ser acompanhado mediante revisão bibliográfica continuada e participação em eventos técnico-científicos de reconhecida qualidade.
+
 % uso de bases de dados públicas gratuitas para testes iniciais
 % montagem de um ambiente/setup experimental para realização de simulações de cenas e testes das estratégias/técnicas utilizadas: computadores, sistemas de aquisição de vídeo (câmeras, sistema de armazenamento), software
+Inicialmente, nas etapas de análise preliminar de técnicas candidatas serão usados conjuntos de dados gratuitos encontrados em repositórios públicos para o treinamento e avalição de classificadores. Com o avanço do projeto na direção de uma implementação em ambiente operacional, será essencial dispor de um arranjo experimental (câmeras, software de controle e sistema de armazenamento) para adquirir cenas e simular situações de interesse pouco frequentes nos referidos repositórios públicos.
+
 % integração com o sistema de monitoramento em ambiente real
 % testes iniciais em ambiente real
-% 
-% Python pelo conjunto variado de módulos (bibliotecas) em processamento de sinais, visão computacional e aprendizado de máquina disponíveis, ser uma linguagem de alto nível com resultados na redução do tempo de codificação e obtenção de resultados. na fase de desenvolvimento, mas haverá adaptação ao contexto de software usado na empresa
-% Estratégias de desenvolvimento ágil, em que versões funcionais do produto são lançadas regularmente ao longo do período de desenvolvimento do projeto, facilitando correções e adaptações de escopo
-%
-% Prazo de dois anos: ao fim do primeiro ano, primeiro release já instalado na empresa. Atualizações de funcionalidade periódicas, mês a mês até o final do projeto
-% Relatórios de acompanhamento técnico-finaceiro semestrais
-% Reuniões de revisão abertas a todos os interessados (stackeholders)
-%
-% As técnicas propostas serão avaliadas segundo os procedimentos padrão da área de classificação: treinamento: data augmentation, e validação cruzada; monitoramento da função custo e acurácia de classificação, matriz de confusão, curvas ROC (em caso de discriminadores ou seja lassificação binária) e curvas ROC multi-classes (adaptação para classificação não-binária), complexidade computacional em fase de treinamento e produção, 
+O projeto será executado em um período de dois anos. Pretende-se que ao longo do primeiro ano do projeto, seja feita a seleção do conjunto de técnicas que integrarão o sistema de monitoramento inteligente. É previsto o lançamento de um protótipo funcional no início do segundo semestre que servirá para prova de conceito nas técnicas investigadas. Uma primeira versão do sistema operando em ambiente relevante é esperada no início do terceiro semestre, a qual será aprimorada continuamente até sua integração e funcionamento em ambiente operacional, o que deve ocorrer no quarto e último semestre de execução deste projeto.
 
-% Esses tópicos devem ser transferidos ou replicados para a seção de indicadores...
-% Dadas as orientações, é necessário verificar se as normas estão sendo seguidas. Tendo isso em mente, crie métricas para medir o desempenho dos profissionais quanto ao uso dos equipamentos de proteção e adoção das medidas de segurança.
-% Alguns dos indicadores que podem ser utilizados para fins de avaliação e divulgação são:
-%    número de incidentes;
-%    despesas com multas;
-%    quantidade de funcionários afastados por motivo de acidentes de trabalho;
-%    número de irregularidades encontradas em inspeções.
+% Python pelo conjunto variado de módulos (bibliotecas) em processamento de sinais, visão computacional e aprendizado de máquina disponíveis, ser uma linguagem de alto nível com resultados na redução do tempo de codificação e obtenção de resultados. na fase de desenvolvimento, mas haverá adaptação ao contexto de software usado na empresa
+A linguagem de programação adotada será o Python, escolha justificada pela disponibilidade de bibliotecas de grande qualidade voltadas para o processamento de sinais, visão computacional e aprendizado de máquina, reduzindo sobremaneira o tempo de codificação e obtenção de resultados. Quando da integração do sistema desenvolvido no ambiente operacional, haverá adaptação ao contexto de software e ferramentas computacionais usados pela empresa parceira/demandadora. 
+
+% Estratégias de desenvolvimento ágil, em que versões funcionais do produto são lançadas regularmente ao longo do período de desenvolvimento do projeto, facilitando correções e adaptações de escopo
+% Prazo de dois anos: ao fim do primeiro ano, primeiro release já instalado na empresa. Atualizações de funcionalidade periódicas, mês a mês até o final do projeto
+% Reuniões de revisão abertas a todos os interessados (stackeholders)
+A estratégia na gerenciamento do projeto segue os preceitos do desenvolvimento ágil de soluções, notadamente o Scrum. Dessa forma, considera as reuniões diárias breves (15 minutos), e períodos de desenvolvimento curtos (uma a quatro semanas) ao final dos quais novas versões funcionais do produto do projeto são apresentadas e avaliadas. Tais avaliações, realizadas em encontros abertos a todos os interessados no projeto, facilitam correções, adaptações de escopo e orientam o ciclo seguinte de desenvolvimento. Para fins de acompanhamento e registro, relatórios técnico-finaceiros serão redigidos com periodicidade semestral.
+
+A avaliação das técnicas propostas seguirá os procedimentos já consagrados na área de aprendizado de máquina: desempenho por validação cruzada; monitoramento da função custo e acurácia de classificação, matriz de confusão, curvas ROC (para discriminadores ou classificadores binários), curvas ROC multi-classes (adaptação para classificação não-binária), e estimação da complexidade computacional nas fases de treinamento e produção. 
 
 
 % risco tecnológico
@@ -128,6 +129,14 @@ O Laboratório de Processamento de Sinais (LaPS) é um grupo de pesquisa associa
 % impactos: tecnológico, econômico, ambiental, social,
 \subsection{Indicadores de impacto}
 \label{ssec:impact}
+% Esses tópicos devem ser transferidos ou replicados para a seção de indicadores...
+% Dadas as orientações, é necessário verificar se as normas estão sendo seguidas. Tendo isso em mente, crie métricas para medir o desempenho dos profissionais quanto ao uso dos equipamentos de proteção e adoção das medidas de segurança.
+% Alguns dos indicadores que podem ser utilizados para fins de avaliação e divulgação são:
+%    número de incidentes;
+%    despesas com multas;
+%    quantidade de funcionários afastados por motivo de acidentes de trabalho;
+%    número de irregularidades encontradas em inspeções.
+
 \begin{enumerate}
 	\item Impacto tecnológico e científico:
 		%Apresentar indicadores voltados à área tecnológica, tais como desenvolvimento de produtos ou processos, obtenção de patentes, entre outros.
