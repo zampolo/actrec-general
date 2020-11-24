@@ -151,7 +151,7 @@
 \begin{table}[!h]
 \centering
 \scriptsize
-	\caption{Capital}
+	\caption{Capital por mês}
 %\rowcolors{2}{lightgray}{}%lightgray
 \begin{tabular}{clp{0.35\textwidth}cccc}
 \toprule
@@ -177,9 +177,9 @@
 \begin{table}[!h]
 \centering
 %\scriptsize
-	\caption{Custeio por mês}
+	\caption{Passagens e diárias por mês}
 %\rowcolors{2}{lightgray}{}%lightgray
-\begin{tabular}{clccccc}
+\begin{tabular}{lcccccc}
 \toprule
 %\hline\hline
 %   \rowcolor{lgray}
@@ -200,3 +200,77 @@
 \end{table}
  
 \subsection{Geral}
+
+\begin{table}[!h]
+\scriptsize
+	\caption{Desembolso mensal por tipo}
+\rowcolors{2}{lightgray}{}%lightgray
+\centering
+\begin{tabular}{lcrrrrrr}
+\toprule
+%\hline\hline
+   \rowcolor{lgray}
+	Ano  & Mês      & Bolsas  & Terceiros  & Consumo & Pass/Diárias & Capital    & Valor \\
+\midrule
+       Ano 1 & 01       &  11.000,00 &      0,00 & 650,00  &     0,00     & 60.529,36 &  72.179,36\\
+             & 02       &  11.000,00 &      0,00 &   0,00  &     0,00     &      0,00 &   11.000,00\\
+             & 03       &  11.000,00 &      0,00 &   0,00  &     0,00     &      0,00 &   11.000,00\\
+             & 04       &  11.000,00 &  2.000,00 &   0,00  &     0,00     &      0,00 &   13.000,00\\
+             & 05       &  11.000,00 &      0,00 &   0,00  &     0,00     &      0,00 &   11.000,00\\
+             & 06       &  11.000,00 &      0,00 &   0,00  &     0,00     &      0,00 &   11.000,00\\
+             & 07       &  11.000,00 &  3.000,00 &   0,00  &     0,00     &      0,00 &   14.000,00\\
+             & 08       &  11.000,00 &  3.000,00 &   0,00  &     0,00     &      0,00 &   14.000,00\\
+             & 09       &  11.000,00 &  3.000,00 &   0,00  &     0,00     &      0,00 &   14.000,00\\
+             & 10       &  11.000,00 &  3.000,00 &   0,00  &     0,00     &      0,00 &   14.000,00\\
+             & 11       &  11.000,00 &  3.000,00 &   0,00  &     0,00     &      0,00 &   14.000,00\\
+             & 12       &  11.000,00 &  3.000,00 &   0,00  & 9.800,00     &      0,00 &   23.800,00\\
+\midrule
+	     & Subtotal & 132.000,00 & 20.000,00 & 650,00  & 9.800,00     & 60.529,36 & 222.979,36\\
+%   \rowcolor{lightblue}%lgray}
+\midrule
+\midrule
+   \rowcolor{lgray}
+	Ano  & Mês      & Bolsas  & Terceiros  & Consumo & Pass/Diárias & Capital    & Valor \\
+\midrule
+       Ano 2 & 13       &  11.000,00 &  3.000,00 & 650,00  &      0,00   & 64.070,55 &  78.720,55\\
+             & 14       &  11.000,00 &  3.000,00 &   0,00  &      0,00   &      0,00 &  14.000,00\\
+             & 15       &  11.000,00 &  3.000,00 &   0,00  &      0,00   &      0,00 &  14.000,00\\
+             & 16       &  11.000,00 &  3.000,00 &   0,00  &      0,00   &      0,00 &  14.000,00\\
+             & 17       &  11.000,00 &  3.000,00 &   0,00  &      0,00   &      0,00 &  14.000,00\\
+             & 18       &  11.000,00 &  3.000,00 &   0,00  &      0,00   &      0,00 &  14.000,00\\
+             & 19       &  11.000,00 &      0,00 &   0,00  &      0,00   &      0,00 &   11.000,00\\
+             & 20       &  11.000,00 &  2.000,00 &   0,00  &      0,00   &      0,00 &   11.000,00\\
+             & 21       &  11.000,00 &      0,00 &   0,00  &      0,00   &      0,00 &   11.000,00\\
+             & 22       &  11.000,00 &      0,00 &   0,00  &      0,00   &      0,00 &   11.000,00\\
+             & 23       &  11.000,00 &      0,00 &   0,00  &      0,00   &      0,00 &   11.000,00\\
+             & 24       &  11.000,00 & 10.500,00 &   0,00  & 32.340,00   &      0,00 &  53.840,00\\
+\midrule
+	     & Subtotal & 132.000,00 & 28.500,00 & 650,00  & 32.340,00   & 64.070,55 & 257.560,55\\
+%   \rowcolor{lgray}
+\bottomrule
+%\hline\hline   
+\end{tabular}
+	\label{tab:geral-mes-tipo}
+\end{table}
+
+\begin{table}[!h]
+%\scriptsize
+	\caption{Desembolso anual por rubrica}
+\rowcolors{2}{lightgray}{}%lightgray
+\centering
+\begin{tabular}{crrrr}
+\toprule
+%\hline\hline
+   %\rowcolor{lgray}
+	Ano   & RH         & Custeio   & Capital    & Total \\
+\midrule
+	Ano 1 & 132.000,00  & 30.450,00 & 60.529,36  & 222.979,36\\
+	Ano 2 & 132.000,00  & 61.490,00 & 64.070,55  & 257.560,55\\
+\midrule
+	Total & 264.000,00 & 91.940,00 & 124.599,91 & 480.539,91\\
+\bottomrule
+%\hline\hline   
+\end{tabular}
+	\label{tab:geral-ano-rubrica}
+\end{table}
+%
