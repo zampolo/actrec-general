@@ -1,10 +1,14 @@
 %orcamento.tex
 \subsection{Recursos humanos}
-\begin{table}[!h]
+A equipe de execução foi concebida como sendo composta por dois alunos de graduação (IC), dois mestrandos (MT), um doutorando (DR), dois pesquisadores seniors (PQ) e um coordenador. Tal configuração foi elaborada no sentido de obter um bom compromisso entre custo e maturidade técnica suficiente para executar o projeto no prazo estipulado. Os valores de bolsa para IC, MT e DR têm como referência os valores pagos pelo CNPq. A Tabela~\ref{tab:rhmes} mostra as despesas mensais totais e por tipo de bolsa nos primeiro e segundo anos de projeto.
+A Tabela~\ref{tab:rhano} apresenta os valores anuais totais de desembolso com recursos humanos do projeto.
+Por sua vez, a Tabela~\ref{tab:rhtipo} especifica o investimento total em recursos humanos por tipo.
+
+\begin{table}[h!]
 \scriptsize
 	\caption{Recursos humanos -- desembolso mensal por ano}
 \rowcolors{2}{lightgray}{}%lightgray
-\begin{tabular}{ lcccccccccccc}
+\begin{tabular}{ lrrrrrrrrrrrr}
 \toprule
 %\hline\hline
    \rowcolor{lgray}
@@ -43,12 +47,13 @@
 	\label{tab:rhmes}
 \end{table}
 %====================
+
 \begin{table}[!h]
 \centering
 %\scriptsize
 	\caption{Recursos humanos por ano do projeto}
 %\rowcolors{2}{lightgray}{}%lightgray
-\begin{tabular}{ lc}
+\begin{tabular}{ lr}
 \toprule
 %\hline\hline
 %   \rowcolor{lgray}
@@ -63,14 +68,14 @@
 \end{tabular}
 	\label{tab:rhano}
 \end{table}
-
 %=======================
+
 \begin{table}[!h]
 \centering
 %\scriptsize
 	\caption{Recursos humanos por tipo}
 %\rowcolors{2}{lightgray}{}%lightgray
-\begin{tabular}{ lc}
+\begin{tabular}{ lr}
 \toprule
 %\hline\hline
 %   \rowcolor{lgray}
@@ -89,13 +94,20 @@
 	\label{tab:rhtipo}
 \end{table}
  
+\newpage
 \subsection{Serviços de terceiros}
+A título de justificativa dos itens relacionados na Tabela~\ref{tab:ter}: 
+\begin{itemize}
+	\item A \emph{instalação de sistema de câmeras} é normalmente oferecida ou indicada pela empresa que vende esse tipo de sistema e é recomendável fazer uso de tal serviço profissional, tanto para não se perder a garantia dos equipamentos, quanto para se poder utilizar o mais rapidamente possível o sistema de aquisição de vídeo. Esse último aspecto é de grande importância para o atendimento dos prazos do projeto;
+	\item O item \emph{computação em nuvem} tem por objetivo resgardar os prazos de entrega nas diferentes fases da execução contra atrasos na aquisição de computadores de alto desempenho, depreciação cambial (o que impediria a aquisição de computadores com a qualidade/preço inicialmente cotados), e eventuais panes nos sistemas de processamento;
+	\item As \emph{taxas open access} visam prover recurso para o pagamento referente à publicação em periódicos de acesso livre de prestígio internacional de artigos técnicos relacionados à produção do projeto.
+\end{itemize}
 \begin{table}[!h]
 \centering
 %\scriptsize
 	\caption{Serviços de terceiros por mês}
 %\rowcolors{2}{lightgray}{}%lightgray
-\begin{tabular}{clc}
+\begin{tabular}{clr}
 \toprule
 %\hline\hline
 %   \rowcolor{lgray}
@@ -114,7 +126,7 @@
 	16    & Computação em nuvem                & 3.000,00 \\
 	17    & Computação em nuvem                & 3.000,00 \\
 	17    & Computação em nuvem                & 3.000,00 \\
-	24    & Taxas Open Acess                   &10.500,00 \\
+	24    & Taxas Open Access                  &10.500,00 \\
 \midrule
  %  \rowcolor{lgray}
 	      & Total                              &48.500,00 \\
@@ -122,14 +134,16 @@
 \end{tabular}
 	\label{tab:ter}
 \end{table}
- 
+\newpage
+
 \subsection{Custeio}
+Os itens de custeio apresentados na Tabela~\ref{tab:custeio} referem-se principalmente a material de escritório a ser utilizado necessariamente em atividades relacionadas à execução do projeto de pesquisa.
 \begin{table}[!h]
 \centering
 %\scriptsize
 	\caption{Custeio por mês}
 %\rowcolors{2}{lightgray}{}%lightgray
-\begin{tabular}{clccc}
+\begin{tabular}{clrcr}
 \toprule
 %\hline\hline
 %   \rowcolor{lgray}
@@ -148,12 +162,13 @@
 \end{table}
  
 \subsection{Capital}
+Os itens de capital relacionados na Tabela~\ref{tab:capital} consistem em equipamentos para aquisição (câmera de vigilância, gravador digital, e hd) e processamento (desktop, workstation, e notebook) de vídeo digital. Os desktops e workstation possuem configuração para suportar as fases de treinamento e produção de sistemas baseados em aprendizado de máquina que lidem com grande volume de dados, o que é típico em aplicaçãoes de reconhecimento de atividades por vídeo e redes neurais convolucionais. Os notebooks são de alto desempenho e devem apoiar a realização de testes em campo do sistema de reconhecimento de atividades.
 \begin{table}[!h]
 \centering
 \scriptsize
 	\caption{Capital por mês}
 %\rowcolors{2}{lightgray}{}%lightgray
-\begin{tabular}{clp{0.35\textwidth}cccc}
+\begin{tabular}{clp{0.35\textwidth}rcr}
 \toprule
 %\hline\hline
 %   \rowcolor{lgray}
@@ -172,14 +187,16 @@
 \end{tabular}
 	\label{tab:capital}
 \end{table}
- 
+\newpage
+
 \subsection{Passagens e diárias}
+Na Tabela~\ref{tab:viagem} estão especificados recursos para viabilizar a participação de pesquisadores em eventos técnicos de abrangência nacional e internacional. A finalidade de tais participações seria a atualização técnica da equipe e a apresentação de trabalhos produzidos no âmbito do projeto e aprovados por comitê de revisores. Face ao tempo para execução do projeto, estima-se a possibilidade a participação em dois eventos nacionais e um evento internacional. Para os eventos nacionais, é prevista a participação de dois membros do projeto, com cinco diárias de manutenção cada. Para o evento internacional, prevê-se a participação de um pesquisador da equipe e sete diárias. Para os valores de diárias nacionais e internacionais, utilizou-se como referência os valores correspondentes pagos pelo CNPq.
 \begin{table}[!h]
 \centering
 %\scriptsize
 	\caption{Passagens e diárias por mês}
 %\rowcolors{2}{lightgray}{}%lightgray
-\begin{tabular}{lcccccc}
+\begin{tabular}{lcccrcr}
 \toprule
 %\hline\hline
 %   \rowcolor{lgray}
@@ -190,7 +207,7 @@
 	Passagem aérea nacional      & 24  & a definir  & Apresentação de trabalho & 3.300,00    & 02         &  6.600,00 \\
 	Diárias (nacional)           & 24  & a definir  & Manutenção em viagem     &   320,00    & 10         &  3.200,00 \\
 	Passagem aérea internacional & 24  & a definir  & Apresentação de trabalho & 7.000,00    & 01         &  7.000,00 \\
-	Diárias (internacional)      & 24  & a definir  & Manutenção em viagem     & 2.220,00    & 10         & 15.540,00 \\
+	Diárias (internacional)      & 24  & a definir  & Manutenção em viagem     & 2.220,00    & 07         & 15.540,00 \\
 \midrule
  %  \rowcolor{lgray}
 	                             &     &            &                          &             & Total      & 42.140,00 \\
@@ -200,7 +217,8 @@
 \end{table}
  
 \subsection{Geral}
-
+Nesta seção, apresentamos um resumo do orçamento. Na Tabela~\ref{tab:geral-mes-tipo} encontra-se o desembolso mensal para cada tipo de item de orçamento.
+A Tabela~\ref{tab:geral-ano-rubrica}, por sua vez, exibe o investimento anual por rubrica. Nesse caso, a coluna \emph{Custeio} reúne \emph{Terceiros}, \emph{Consumo}, e \emph{Passagens/Diárias}.
 \begin{table}[!h]
 \scriptsize
 	\caption{Desembolso mensal por tipo}
@@ -256,7 +274,7 @@
 \begin{table}[!h]
 %\scriptsize
 	\caption{Desembolso anual por rubrica}
-\rowcolors{2}{lightgray}{}%lightgray
+%\rowcolors{2}{lightgray}{}%lightgray
 \centering
 \begin{tabular}{crrrr}
 \toprule
@@ -273,4 +291,5 @@
 \end{tabular}
 	\label{tab:geral-ano-rubrica}
 \end{table}
+\clearpage
 %
