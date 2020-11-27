@@ -1,0 +1,168 @@
+%the sources and quality of evidences consulted
+
+% justificativa: relevância do problema
+\subsection{Justificativa}
+\label{ssec:just}
+% qual a relevância do problema
+A razão de ser desta proposta apresenta-se sob dois enfoques. Um deles, acadêmico: redes neurais profundas aplicadas à interpretação automática de imagens ou vídeos é um tópico de grande atualidade e interesse na comunidade científica. Mais especificamente, o reconhecimento de atividades humanas em ambientes reais ganha cada vez mais espaço em conferências e publicações especializadas em decorrência dos resultados promissores, alcançados mediante proposições de novas arquiteturas, estratégias de treinamento e transferência de conhecimento em aprendizagem profunda, e disponibilidade cada vez maior tanto de sistemas de captura com recursos de acesso a redes de comunicação, quanto de unidades de armazenamento de alta capacidade. Considerável esforço tem sido empregado na modelagem temporal de atividades complexas, na caracterização da interação entre pessoas e objetos em uma cena, e no aumento de acurácia de classificação de ações quando o ambiente monitorado é complexo e dinâmico.
+
+O segundo enfoque possui igualmente grande relevância e constitui a principal motivação deste projeto: segurança e proteção em ambientes industriais. O tema é de importância evidente, pois impacta em diversos elementos, dentre os quais, a integridade física e psicológica dos colaboradores da indústria, produtividade das empresas, e pegada ambiental da atividade industrial. Apesar da adoção de políticas internas induzidas pela legislação específica, estima-se que mais de R\$ 20 bilhões da Previdência Social foram gastos com benefícios (indenizações e tratamentos de saúde) para trabalhadores acidentados entre 2012 e 2016. A Associação Nacional dos Procuradores do Trabalho (ANPT), indica que em 2015 o Brasil registrou aproximadamente 704.000 acidentes de trabalho e 3.000 mortes associadas. Tais acidentes trazem consequências negativas para a economia em geral, para a empresa implicada, e, principalmente, para os trabalhadores e seus familiares. Em setores de grande concorrência, os custos associados a acidentes laborais podem acarretar expressiva redução do potencial competitivo da empresa.  
+
+Os sistemas de reconhecimento de atividades humanas fazem uso de técnicas de inteligência computacional e oferecem uma camada de proteção a mais aos protocolos já implementados pela equipe de segurança de uma empresa. Tais sistemas podem ser usados no apoio às inspeções de segurança regulares, e em ações de conscientização sobre a importância do uso de equipamento de proteção individual (EPI) e coletiva (EPC), e manuseio correto de maquinário. Se o sistema de monitoramento dispor de câmeras com sensores térmicos, avaliações automáticas de temperatura podem ser programadas, auxiliando na prevenção contra incêncios. Uma tendência recente com crescente popularidade, é o uso de câmeras embarcadas em drones. O arranjo permite a verificação remota de áreas, equipamentos e estruturas de difícil acesso ou de grande risco aos trabalhadores.
+
+A integração de recursos de inteligência computacional na atividade industrial alinha-se com as proposições de renovação tecnológica da Indústria 4.0 e da transformação digital. Economia de insumos, aumento da produtividade e competitividade, prevenção ativa contra acidentes, e redução do número de paradas na operação (seja para manutenção reativa ou reposição de peças e equipamentos por uso incorreto) são alguns dos benefícios advindos da implantação de um sistema de monitoramento inteligente. 
+
+\subsection{Metodologia}
+\label{ssec:metod}
+% metodologia: como 
+% procedimentos experimentais
+% data gathered 
+% controls
+% statistical methods
+
+% formação de equipe
+% estado da arte.
+O núcleo da equipe executora será formado por pesquisadores e estudantes de nível superior atuantes nas áreas de aprendizado de máquina, visão computacional, e programação.
+
+A fim de entregar um produto tecnológico de real valor agregado, o estado da arte em videomonitoramento inteligente deverá ser acompanhado mediante revisão bibliográfica continuada e participação em eventos técnico-científicos de reconhecida qualidade.
+
+% uso de bases de dados públicas gratuitas para testes iniciais
+% montagem de um ambiente/setup experimental para realização de simulações de cenas e testes das estratégias/técnicas utilizadas: computadores, sistemas de aquisição de vídeo (câmeras, sistema de armazenamento), software
+Inicialmente, nas etapas de análise preliminar de técnicas candidatas serão usados conjuntos de dados gratuitos encontrados em repositórios públicos para o treinamento e avalição de classificadores. Com o avanço do projeto na direção de uma implementação em ambiente operacional, será essencial dispor de um arranjo experimental (câmeras, software de controle e sistema de armazenamento) para adquirir cenas e simular situações de interesse pouco frequentes nos referidos repositórios públicos.
+
+% integração com o sistema de monitoramento em ambiente real
+% testes iniciais em ambiente real
+O projeto será executado em um período de dois anos. Pretende-se que ao longo do primeiro ano do projeto, seja feita a seleção do conjunto de técnicas que integrarão o sistema de monitoramento inteligente. É previsto o lançamento de um protótipo funcional no início do segundo semestre que servirá para prova de conceito nas técnicas investigadas. Uma primeira versão do sistema operando em ambiente relevante é esperada no início do terceiro semestre, a qual será aprimorada continuamente até sua integração e funcionamento em ambiente operacional, o que deve ocorrer no quarto e último semestre de execução deste projeto.
+
+% Python pelo conjunto variado de módulos (bibliotecas) em processamento de sinais, visão computacional e aprendizado de máquina disponíveis, ser uma linguagem de alto nível com resultados na redução do tempo de codificação e obtenção de resultados. na fase de desenvolvimento, mas haverá adaptação ao contexto de software usado na empresa
+A linguagem de programação adotada será o Python, escolha justificada pela disponibilidade de bibliotecas de grande qualidade voltadas para o processamento de sinais, visão computacional e aprendizado de máquina, reduzindo sobremaneira o tempo de codificação e obtenção de resultados. Quando da integração do sistema desenvolvido no ambiente operacional, haverá adaptação ao contexto de software e ferramentas computacionais usados pela empresa parceira/demandadora. 
+
+% Estratégias de desenvolvimento ágil, em que versões funcionais do produto são lançadas regularmente ao longo do período de desenvolvimento do projeto, facilitando correções e adaptações de escopo
+% Prazo de dois anos: ao fim do primeiro ano, primeiro release já instalado na empresa. Atualizações de funcionalidade periódicas, mês a mês até o final do projeto
+% Reuniões de revisão abertas a todos os interessados (stackeholders)
+A estratégia na gerenciamento do projeto segue os preceitos do desenvolvimento ágil de soluções, notadamente o Scrum. Dessa forma, considera as reuniões diárias breves (15 minutos), e períodos de desenvolvimento curtos (uma a quatro semanas) ao final dos quais novas versões funcionais do produto do projeto são apresentadas e avaliadas. Tais avaliações, realizadas em encontros abertos a todos os interessados no projeto, facilitam correções, adaptações de escopo e orientam o ciclo seguinte de desenvolvimento. Para fins de acompanhamento e registro, relatórios técnico-financeiros serão redigidos com periodicidade semestral.
+
+A avaliação das técnicas propostas seguirá os procedimentos já consagrados na área de aprendizado de máquina: desempenho por validação cruzada; monitoramento da função custo e acurácia de classificação, matriz de confusão, curvas ROC (para discriminadores ou classificadores binários), curvas ROC multi-classes (adaptação para classificação não-binária), e estimação da complexidade computacional nas fases de treinamento e produção. 
+
+
+% risco tecnológico
+\subsection{Análise preliminar de riscos}
+\label{ssec:risco}
+A seguir são apontados os riscos antevistos e as estratégias para mitigá-los: 
+\begin{enumerate}
+	\item Indisponibilidade de conjuntos de dados adequados para treinamento do sistema de reconhecimento de atividades: apesar da disponibilidade de conjunto de dados públicos, o número de clips (trechos de vídeo) contendo situações específicas de interesse para a aplicação pretendida não é suficiente para o treinamento adequado do sistema de reconhecimento. Dessa forma, deverão ser produzidos novos vídeos que retratem mais fielmente situações e características ambientais típicas da aplicação pretendida. A indisponibilidade de conjunto de dados apropriado tem impacto negativo na acurácia do reconhecimento e poderá inviabilizar o atingimento dos objetivos do projeto. Para mitigar: prioridade na realização de setup experimental piloto, e início de coleta de dados ainda no primeiro semestre de execução do projeto. Nesse sentido, desde o primeiro momento deve se dar atenção especial à aquisição dos equipamentos necessários à coleta e ao armazenamento de dados, e à obtenção das permissões requeridas (comitê de ética em pesquisa, administração da operação, orgãos governamentais, etc.).
+	\item Perda de dados experimentais: um dos elementos de maior valor agregado no projeto é o conjunto de dados contendo os vídeos produzidos e utilizados para treinamento do sistema de reconhecimento de atividades. Isso se deve ao esforço necessário para coleta de dados, rotulação de atividades e edição de vídeo. Para mitigar: uma estratégia automática e estrita de backup, com uso de redundâncias em relação ao número e frequência de cópias, deve ser estabelecida para manter probabilidade de perda de dados sob controle.
+	\item Perda de código produzido: o produto mesmo do projeto consiste em softwares (sistema de reconhecimento de atividades, aplicativo mobile e aplicativo web). A perda de código provocada por fatores acidentais (perda de dispositivos de armazenamento por surtos de energia) ou intencionais (ataques cibernéticos) pode acarretar atrasos nas entregas do projeto ou mesmo inviabilizar a concretização de seu objetivo. Para mitigar: uso de equipamentos de nobreak (sistemas de proteção a surtos) e armazenamento de código em repositórios distribuídos (local e em nuvem) com controle de acesso para evitar uso não autorizado.
+	\item Indisponibilidade de recursos de software e hardware suficientes para o desenvolvimento da proposta: a alta cambial do Dólar em relação ao Real pode levar à impossibilidade de aquisição de hardware e software especificados inicialmente na etapa de elaboração da proposta. Para mitigar: considerar a variação do câmbio nos últimos 6 meses por ocasião da elaboração do orçamento do projeto; priorização e presteza nas atividades de compra de equipamentos e programas de computador, tão logo haja liberação de recursos; e contratação de recursos de computação em nuvem.
+	\item Violação de confidencialidade: os vídeos adquiridos pelo sistema de reconhecimento, seja na fase de desenvolvimento ou de operação, podem ser hackeados revelando informações estratégicas sobre as empresas apoiadoras da proposta. Para mitigar: todo e qualquer material em vídeo será transmitido e armazenado em redes protegidas, consoante aos procedimentos de segurança e com concordância expressa das empresas apoiadoras. 
+\end{enumerate}
+
+
+% grau de inovação
+\subsection{Grau de inovação}
+\label{ssec:inova}
+O sistema proposto é composto por: software para reconhecimento automático de atividades humanas, voltado para a detecção de situações de risco à integridade física de pessoas em ambientes industriais monitorados, e aplicativos mobile e web de acesso e análise dos resultados decorrentes desse monitoramento. 
+Os produtos existentes no mercado com maior semelhança à proposta são: câmeras de videomonitoramento; sistemas para prevenção contra afogamento; e monitoramento de atividades por sensores. 
+
+As câmeras de videomonitoramento atuais podem ser conectadas à internet ou permanecer em circuito fechado. Alguns modelos possuem visão noturna, visão térmica integrada, controle de posição e zoom (câmeras PTZ), canal de áudio bidirecional, e sistema de proteção anti-vandalismo. Dispõem ainda de aplicativo de controle, possibilidade de visualização em tempo real e armazenamento de vídeo local ou em nuvem, e interação por áudio com o ambiente monitorado. Alguns sistemas têm inteligência embarcada para detecção de situções de interesse simples, tais como identificação de modelos e cor de automóveis, reconhecimento de placas, estatísticas de fluxo (carros e pessoas), detecção de fogo, medição de temperatura, e cerca virtual. A reação a situações mais complexas, contudo, é geralmente tadia, feita a partir da revisão do vídeo registrado, salvo se alguém estiver observando o ambiente monitorado no instante de ocorrência, ou se a pessoa monitorada tiver possibilidade de se comunicar pelo canal de áudio da própria câmera. 
+
+Por sua vez, as soluções para prevenção contra afogamentos em piscinas consistem em: câmeras, visando o monitoramento tanto fora como embaixo d’água; sistemas de hardware e software para análise de vídeo; e interface de visualização/alerta. As imagens capturadas são analisadas em tempo real, procurando detectar duas situações: pessoas que estejam sem movimento; pessoas cuja movimentação seja incompatível com o que se poderia chamar de nado. Nessas duas situações, alertas sonoros e visuais são enviados para um equipamento que fica com o guarda-vidas (piscinas públicas) ou responsáveis e familiares (piscinas em residências).
+
+O monitoramento de atividades por sensores tem sido usado comumente em ambientes domésticos. Sua implementação pressupõe o uso de sensores sem fio no ambiente e/ou em objetos de interesse. Por exemplo, a regularidade no uso de medicação por idosos pode ser inferida por sensor posicionado na caixa ou gaveta de medicamentos, cujos horários de abertura podem ser comparados com cronograma previamente definido. Da mesma forma, pode-se identificar se a rotina diária de atividades foi alterada mediante sensores posicionados em controle remoto da TV, cama, porta, xícara, etc. Uma variante deste sistema é o uso de vestíveis, ou seja, sensores em calçados, camisas, calças, etc., que permitiriam registrar a movimentação de indivíduos que estivessem portanto as peças de roupa monitoradas. O principal inconveniente dessa abordagem é a necessária adesão do indivíduo ao uso dos objetos e roupas contendo sensores, o que pode ser problemático em certas situações.
+
+O sistema proposto concentra-se em etapas de processamento e análise que são posteriores à aquisição de vídeo, fazendo uso das câmeras de videomonitoramento já existentes no mercado ou previamente instaladas no ambiente a ser monitorado, mas agregando inteligência ao monitoramento. Detecção de acesso a ambientes por pessoas ou em horários não autorizados, ausência de EPI obrigatório, localização de comportamento anômalo, e avaliação de fluxo de pessoas são algumas das possibilidades de uso do sistema proposto. Em comparação ao uso de sensores, a abordagem por visão computacional dispensa o uso de roupas e objetos específicos, podendo ser utilizada em um número maior de situações sem que haja necessidade de aumentar o número de equipamentos para realizar o monitoramento. Os autores da proposta acreditam que a  proposta aporta inovação importante na área de  monitoramento de ambientes industriais, promovendo maior segurança a colaboradores e contribuindo para prevenção contra acidentes industriais. Até o presente momento não se tem conhecimento de sistema comercial com as mesmas características da proposta apresentada.
+
+Os proponentes deste projeto acompanham os trabalhos científicos recentes sobre reconhecimento automático de atividades e se propõem a avançar o estado da arte na área no que diz respeito a viabilizar a implantação do sistema em ambiente operacional.
+
+% grau de maturidade tecnológica atual, pretendido e os meios para chegar lá
+\subsection{Maturidade tecnológica}
+\label{ssec:trl}
+Os trabalhos científicos publicados sobre sistemas de reconhecimento automático de atividades humanas baseados em visão computacional e aprendizado profundo com potencial para detectar situações de risco em ambientes industriais reportam testes de desempenho obtidos em ambiente laboratorial, configurando nível de maturidade tecnológica 4 (TRL 4). A proposta envolve o reconhecimento multimodal de atividades, onde o vídeo obtido por câmeras convencionais (faixa visível) é acrescido de informações de áudio e de câmeras térmicas, visando melhoria de desempenho em situações práticas de operação\footnote{Caso as modalidades sinal térmico e de aúdio, não possam ser viabilizadas, o projeto pode se adequar ao reconhecimento de atividades apenas por vídeo.}.
+
+Pretende-se chegar à demonstração de protótipo do sistema proposto em ambiente operacional, ou seja, atingir nível de maturidade tecnológica 7 (TRL 7). Para tanto, faz-se necessário percorrer uma sequência de etapas para realizar a transição de maturidade tecnológica almejada.
+
+A primeira dessas etapas é a reprodução do estado da arte em reconhecimento de atividades humanas usando uma rede genérica pré-treinada, cujos parâmetros deverão ser reajustados mediante conjunto de treinamento específico para as atividades de interesse. Para a formação de tal conjunto de dados, deve-se selecionar clips (trechos curtos de vídeo) a partir de bases disponíveis gratuitamente na internet, e em repositórios públicos como o Youtube. A principal entrega nesta etapa é um rede neural profunda com desempenho superior ao da rede genérica original em relação ao reconhecimento das atividades de interesse, e que servirá de base para os próximos desenvolvimentos.
+
+Em seguida, ainda usando repositórios e recursos disponíveis gratuitamente na internet, será acrescentado na rede de reconhecimento um ramo destinado ao processamento de sinal de áudio. A inserção do áudio permitirá que o sistema leve em consideração os sons do ambiente no processo de reconhecimento, combinando-os com as informações visuais. A entrega desta etapa será uma arquitetura que tratará e combinará informações de vídeo convencional e áudio para classificação de atividades. 
+
+Na terceira etapa, agrega-se a informação de sensores térmicos. Nesse caso, haverá necessidade de formação de conjunto de dados próprio pela indisponibilidade desse tipo de informação associada a sinais de áudio e vídeo em repositórios públicos. O ambiente considerado aqui ainda deve ser controlado, porém com características próximas às do ambiente operacional (ambiente relevante), para que se possa avaliar como melhor agregar a imagem térmica ao sistema de classificação já utilizado. Essa é uma etapa que está no caminho crítico da execução da proposta e que depende da aquisição de equipamentos com recursos do projeto. Nessa etapa, duas são as entregas: o próprio conjunto de dados que será único e, portanto, conterá grande valor científico agregado; e uma nova arquitetura de rede profunda para reconhecimento de atividades humanas, cujas entradas compreendem vídeo convencional, áudio e imagem térmica.
+
+A última etapa é semelhante à terceira, com a diferença que o sistema de captura deverá ser instalado em ambiente operacional. Esta etapa, na verdade, deve ocorrer em paralelo à etapa anterior: as coletas em ambiente relevante e operacional podem acontecer simultaneamente para evitar atrasos no desenvolvimento do projeto. Uma vez que se tenha uma arquitetura que integre adequadamente a imagem térmica com ganhos de desempenho em ambiente relevante, o sistema pode ser exposto a situações reais para efetuar os ajustes devidos de seus parâmetros e sua arquitetura à nova situação de operação. Entregas previstas: conjunto de dados, contendo atividades monitoradas em ambiente operacional (mais uma vez, de grande valor científico agregado); e sistema de reconhecimento de atividades humanas, cujas entradas são sinais de vídeo convencional, imagem térmica e sinais de áudio, funcionando em situação prática.
+
+Os aplicativos mobile e web para armazenamento e visualização dos resultados obtidos pelo sistema de monitoramento podem ser desenvolvidos por grupo independente da equipe de aprendizado de máquina, responsável pelo sistema de reconhecimento de atividades. A integração dos aplicativos com a base de dados gerada pelo sistema de aquisição será uma tarefa executada ao longo de todo o período de desenvolvimento do projeto.
+
+% resumo da equipe executora
+%\subsection{Proponentes}
+%\label{ssec:equipe}
+%\begin{enumerate}
+%	\item Ronaldo de Freitas Zampolo é graduado em Engenharia Elétrica pela Universidade Federal do Pará (1995), obteve os títulos de mestre e doutor em Engenharia Elétrica na Universidade Federal de Santa Catarina (em 1998 e 2003, respectivamente), e realizou estágio de pós-doutoramento na Polytech Nantes (Escola de Engenharia da Universidade de Nantes, França) em 2016. Atualmente é professor associado III da Universidade Federal do Pará, membro do Laboratório de Processamento de Sinais, e docente da Faculdade de Engenharia da Computação e Telecomunicações. É também docente permanente do Programa de Pós-Graduação em Ciências Forenses da Universidade Federal do Sul e Sudeste do Pará (UNIFESSPA). Seus interesses e estudos recentes concentram-se, principalmente, nos temas: avaliação de qualidade visual, modelos de atenção visual, sistemas de rastreamento ocular, análise de vídeo, e reconhecimento de atividades humanas. 
+
+%Dentre os projetos em que tem atuado, aqueles de maior afinidade com o tema desta proposta, citamos: 
+%		\begin{itemize}
+%			\item ``Sistemas e tecnologias assistivas e de apoio à reabilitação: implementação de sistemas para análise de marcha 2020'': projeto em curso, aprovado no edital PIBEX 2020 (PROEX-UFPA) com recurso para financiamento de bolsa para aluno de graduação; utilização de sistema baseado em redes neurais profundas (OpenPose)\parencite{cao-2019} para localização automática de pontos anatômicos (articulações de quadril, joelho, tornozelo e ponta do pé) por vídeo, para estimação de parâmetros de marcha sem uso de marcadores (atuação como coordenador); 
+%			\item ``Soluções em `Indústria 4.0' aplicadas à Mineração'': encerrado em 2019, tratava da aplicação de visão computacional na inspeção automática de componentes em vagões ferroviários; projeto financiado pelo ITV-DS, SENAI-PA e CNPq (atuação como membro de equipe de pesquisadores);
+%			\item ``Desenvolvimento de um sistema de monitoramento e diagnóstico on-line de descargas parciais nos enrolamentos estatóricos de hidrogeradores'': projeto encerrado em 2015, versava sobre o uso de redes neurais para identificação de descargas parciais, contava com financiamento da Eletronorte (atuação como membro de equipe de pesquisadores).
+%		\end{itemize}
+%A seguir, segue uma relação de trabalhos publicados em alinhamento com a presente  proposta:
+%		\begin{itemize}
+%			\item GONÇALVES, C. L. A. et al. Improving the performance of a SVM+HOG classifier for detection and tracking of wagon components by using geometric constraints. In: WORKSHOP DE APLICAÇÕES INDUSTRIAIS - CONFERENCE ON GRAPHICS, PATTERNS AND IMAGES (SIBGRAPI), 32., 2019, Rio de Janeiro. Anais [...]. Porto Alegre: Sociedade Brasileira de Computação, 2019. p. 230-236. DOI: https://doi.org/10.5753/sibgrapi.est.2019.8336. 
+%			\item GONÇALVES, L. A., ZAMPOLO, R. F., BARROS, F. B.. A multi-stream network with different receptive fields to assess visual quality. In: Symposium on Knowledge Discovery, Mining and Learning (KDMiLe) (KDMile'19), 2019, Fortaleza (CE). Proceedings of Symposium on Knowledge Discovery, Mining and Learning (KDMiLe) (KDMile'19), 2019. 
+%			\item OLIVEIRA, R. M. S., ARÁUJO, R. C. F., BARROS, F. J. B., SEGUNDO, A. P., ZAMPOLO, R. F. , FONSECA, W. , DIMITRIEV, V., BRASIL, F. S.. A system based on artificial neural networks for automatic classification of hydro-generator stator windings partial discharges. In: Journal of Microwaves, Optoelectronics and Electromagnetic Applications, vol. 16, n. 3, September, 2017.
+%			\item GONÇALVES, C. L. A. , ZAMPOLO, R. F.. Classificador SLFN-ELM aplicado à verificação de adulteração de imagens baseada em padrão CFA. In: XXXIV Simpósio Brasileiro de Telecomunicações, 2016, Santarém (PA). Anais do XXXIV Simpósio Brasileiro de Telecomunicações, 2016.
+%		\end{itemize}	
+%
+%\item Adriana Rosa Garcez Castro possui graduação pela Universidade Federal do Pará-UFPA (1992), mestrado em Engenharia Elétrica pela Universidade Federal do Pará (1995) e doutorado em Engenharia Elétrica pela Faculdade de Engenharia da Universidade do Porto, Portugal (2004). Atualmente é professora Associada IV da Faculdade de Engenharias Elétrica e Biomédica da UFPA, e vem atuando como pesquisadora e docente permanente no Programa de Pós-graduação em Engenharia Elétrica da UFPA, sendo suas áreas de interesse: Sistemas de Energia, Controle de Processos Eletrônicos e Inteligência Computacional Aplicada.
+%
+%\end{enumerate}
+
+% apresentação do laboratório
+%\subsection{Grupos de pesquisa}
+%\label{ssec:grppesq}
+%O Laboratório de Processamento de Sinais (LaPS) é um grupo de pesquisa associado à Faculdade de Engenharia da Computação e Telecomunicações,  à Faculdade de Engenharias Elétrica e Biomédica, e ao Programa de Pós-Graduação de Engenharia Elétrica, todos do Instituto de Tecnologia da UFPA. O LaPS desenvolve pesquisa em diversos ramos do processamento de sinais, com ênfase nas seguintes áreas: a) Sistemas de comunicação 5G e além: modelagem de canal de propagação em ondas milimétricas utilizando traçado de raios (ray-tracing), arquiteturas híbridas para separação espacial de usuários (hybrid-beamforming) para sistemas MIMO (múltiplas-entradas, múltiplas-saídas), técnicas de comunicação para sistemas MIMO massivos; b) Análise de sinais bioelétricos em estados normais e alterados (epilepsia, autismos, TDAH): eletroencefalograma, eletromiograma, eletrocardiograma. Sistemas de Neurofeedback. Neuroengenharia; e c) Processamento de imagem e visão computacional: avaliação de qualidade visual, reconhecimento de atividades humanas, inspeção automática de componentes, sistemas de eye-tracking e modelos de atenção visual. Dentre os parceiros do LaPS, destacamos a Coordenação de Aperfeiçoamento de Pessoal de Nível Superior (CAPES), o Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq), o Instituto SENAI de Inovação - Tecnologias Minerais (ISI-TM), o Abrigo Especial Calabriano, e a Jambu Tecnologia.
+
+%Dentre as atividades desenvolvidas pelo LaPS diretamente relacionadas ao tema da chamada, podemos citar os projetos “Sistemas e tecnologias assistivas e de apoio à reabilitação: implementação de sistemas para análise de marcha 2020” (em curso), “Dmóvel: Ferramenta móvel para fomento à autonomia de PcDs – 2020” (em curso) e “Implementação de Laboratório de Análise de Marcha de Baixo-Custo para Auxílio na Reabilitação de Crianças Portadoras de Encefalopatia Não-Evolutiva” (encerrado em 2012). Os dois primeiros foram recentemente aprovados em editais de extensão da UFPA, sendo contemplados com bolsa para alunos de graduação. O terceiro, por sua vez, foi aprovado em edital da FAPESPA (Fundação de Apoio à Pesquisa do Estado do Pará). Tais projetos contam com instituição parceira de assistência e saúde voltada a pessoas com deficiência, cujo quadro profissional é formado por médicos, psicólogos, terapeutas ocupacionais, e fisioterapia com longa experiência na área. Apesar das aplicações diferirem daquela desta chamada, a experiência em visão computacional e redes neurais artificiais do LaPS pode ser verificada pela participação em outros dois projetos: “Soluções em “Indústria 4.0” aplicadas à Mineração” (encerrado em 2019, aplicação de visão computacional na inspeção automática de componentes em vagões ferroviários, com parcerias do Instituto Tecnológico Vale, e Instituto SENAI de Inovação, e financiamento pelo ITV-DS, SENAI-PA e CNPq) e “Desenvolvimento de um sistema de monitoramento e diagnóstico on-line de descargas parciais nos enrolamentos estatóricos de hidrogeradores” (encerrado em 2015, usa redes neurais para identificação de descargas parciais, com financiamento pela Eletronorte).
+
+% resumo do orçamento
+%\subsection{Resumo do orçamento}
+%\label{ssec:orca}
+
+% impactos: tecnológico, econômico, ambiental, social,
+\subsection{Indicadores de impacto}
+\label{ssec:impact}
+% Esses tópicos devem ser transferidos ou replicados para a seção de indicadores...
+% Dadas as orientações, é necessário verificar se as normas estão sendo seguidas. Tendo isso em mente, crie métricas para medir o desempenho dos profissionais quanto ao uso dos equipamentos de proteção e adoção das medidas de segurança.
+% Alguns dos indicadores que podem ser utilizados para fins de avaliação e divulgação são:
+
+\begin{enumerate}
+	\item Impacto tecnológico e científico:
+		%Apresentar indicadores voltados à área tecnológica, tais como desenvolvimento de produtos ou processos, obtenção de patentes, entre outros.
+		\begin{enumerate}
+			\item Desenvolvimento de 2 produtos: software para reconhecimento de atividades; e aplicativos web/mobile para consulta a relatórios e análise dos dados coletados.
+			\item Registro de 2 softwares: 1) Aplicativo mobile e 2) sistema web para visualização de relatórios para monitoramento remoto de atividades; 
+			%\item Potencial para patente: Técnica para reconhecimento automático de atividades humanas baseado em visão computacional e redes neurais profundas.
+			\item Publicação de artigos em eventos e periódicos de grande relevância científica.
+		\end{enumerate}
+	\item Impacto econômico:
+		%Apresentar indicadores voltados à área econômica, em termos da transferência dos resultados do projeto e sua incorporação pelos setores de produção industrial, serviços e governo, tais como redução de custos, investimentos e retorno financeiro.
+		\begin{enumerate}
+			\item Aumento de economia, nas áreas de saúde, materiais e serviços, decorrente da redução de acidentes nos ambientes monitorados.
+			\item Maior aproveitamento de recursos, face à diminuição de ações de reposição ou manutenção corretiva de equipamentos por danos advindos de manuseio incorreto ou roubo.
+			\item Incremento na competitividade das empresas apoiadoras em consequência da redução do custo de operaçao.
+			\item Diminuição de despesas com multas.
+			\item Redução do número de irregularidades encontradas em inspeções.
+		\end{enumerate}
+	\item Impacto ambiental:
+		%Apresentar indicadores voltados à área ambiental, em termos de sua influência nos níveis de qualidade da água, ar e solos, da preservação da diversidade biológica ou recuperação de degradação, entre outros.
+		\begin{enumerate}
+			\item Não há risco ambiental direto associado ao desenvolvimento ou ao uso do sistema proposto, uma vez que não há produção de substâncias tóxicas ou de efeito contaminante para o ambiente.
+			\item Diminuição do risco de contaminação ambiental associada à ocorrência de acidentes na operação.  
+		\end{enumerate}
+	\item Impacto social:
+		%Apresentar indicadores voltados à área social, em termos de sua influência nos níveis de qualidade de vida das populações afetadas, em âmbito regional ou local, tais como emprego, renda, saúde, educação, habitação, saneamento, entre outros
+		\begin{enumerate}
+			\item Melhoria da qualidade de vida de colaboradores.
+			\item Aumento do capital social, evidenciado pelo investimento na segurança da operação, preocupação com a integridade física e saúde dos colaboradores, e preservação do modo de vida das populações locais.
+			\item Redução do número de incidentes.
+			\item Diminuição da quantidade de funcionários afastados por motivo de acidentes de trabalho.
+		\end{enumerate}
+\end{enumerate}
